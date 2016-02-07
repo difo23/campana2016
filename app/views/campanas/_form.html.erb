@@ -1,0 +1,85 @@
+<%= form_for(@campana) do |f| %>
+  <% if @campana.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@campana.errors.count, "error") %> prohibited this campana from being saved:</h2>
+
+      <ul>
+      <% @campana.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :year %><br>
+    <%= f.number_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre_distrito_municipal %><br>
+    <%= f.text_field :nombre_distrito_municipal %>
+  </div>
+  <div class="field">
+    <%= f.label :codigo_distrito_municipal %><br>
+    <%= f.number_field :codigo_distrito_municipal %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre_municipio %><br>
+    <%= f.text_field :nombre_municipio %>
+  </div>
+  <div class="field">
+    <%= f.label :codigo_municipio %><br>
+    <%= f.number_field :codigo_municipio %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre_provincia %><br>
+    <%= f.text_field :nombre_provincia %>
+  </div>
+  <div class="field">
+    <%= f.label :codigo_provincia %><br>
+    <%= f.number_field :codigo_provincia %>
+  </div>
+  <div class="field">
+    <%= f.label :circuncripcion %><br>
+    <%= f.number_field :circuncripcion %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre_candidato %><br>
+    <%= f.text_field :nombre_candidato %>
+  </div>
+  <div class="field">
+    <%= f.label :posicion_candidatura %><br>
+    <%= f.text_field :posicion_candidatura %>
+  </div>
+  <div class="field">
+    <%= f.label :cedula_candidato %><br>
+    <%= f.text_field :cedula_candidato %>
+  </div>
+  <div class="field">
+    <%= f.label :celular_candidato %><br>
+    <%= f.text_field :celular_candidato %>
+  </div>
+  <div class="field">
+    <%= f.label :email_candidato %><br>
+    <%= f.text_field :email_candidato %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre_director_electoral %><br>
+    <%= f.text_field :nombre_director_electoral %>
+  </div>
+  <div class="field">
+    <%= f.label :cedula_director_electoral %><br>
+    <%= f.text_field :cedula_director_electoral %>
+  </div>
+  <div class="field">
+    <%= f.label :celular_director_electoral %><br>
+    <%= f.text_field :celular_director_electoral %>
+  </div>
+  <div class="field">
+    <%= f.label :email_director_electoral %><br>
+    <%= f.text_field :email_director_electoral %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

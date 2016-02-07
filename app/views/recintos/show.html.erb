@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre recinto:</strong>
+  <%= @recinto.nombre_recinto %>
+</p>
+
+<p>
+  <strong>Codigo recinto:</strong>
+  <%= @recinto.codigo_recinto %>
+</p>
+
+<p>
+  <strong>Nombre encargado recinto:</strong>
+  <%= @recinto.nombre_encargado_recinto %>
+</p>
+
+<p>
+  <strong>Email encargado recinto:</strong>
+  <%= @recinto.email_encargado_recinto %>
+</p>
+
+<p>
+  <strong>Celular encargado recinto:</strong>
+  <%= @recinto.celular_encargado_recinto %>
+</p>
+
+<p>
+  <strong>Cedula encargado recinto:</strong>
+  <%= @recinto.cedula_encargado_recinto %>
+</p>
+
+<%= link_to 'Edit', edit_recinto_path(@recinto) %> |
+<%= link_to 'Back', recintos_path %>

@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Mesas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codigo mesa</th>
+      <th>Nombre encargado mesa</th>
+      <th>Cedula encargado mesa</th>
+      <th>Celular encargado mesa</th>
+      <th>Email encargado mesa</th>
+      <th>Nombre delegado</th>
+      <th>Cedula delegado</th>
+      <th>Celular delegado</th>
+      <th>String</th>
+      <th>Email delegado</th>
+      <th>Nombre suplente</th>
+      <th>Cedula suplente</th>
+      <th>Celular suplente</th>
+      <th>Email suplente</th>
+      <th>Total </th>
+      <th>Inscritos anterio</th>
+      <th>Total pld anterior</th>
+      <th>Total prd anterior</th>
+      <th>Total votos validos anterior</th>
+      <th>Total votos nulos anterior</th>
+      <th>Total votos observados anterior</th>
+      <th>Total votos emitidos anterior</th>
+      <th>Total inscritos</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mesas.each do |mesa| %>
+      <tr>
+        <td><%= mesa.codigo_mesa %></td>
+        <td><%= mesa.nombre_encargado_mesa %></td>
+        <td><%= mesa.cedula_encargado_mesa %></td>
+        <td><%= mesa.celular_encargado_mesa %></td>
+        <td><%= mesa.email_encargado_mesa %></td>
+        <td><%= mesa.nombre_delegado %></td>
+        <td><%= mesa.cedula_delegado %></td>
+        <td><%= mesa.celular_delegado %></td>
+        <td><%= mesa.String %></td>
+        <td><%= mesa.email_delegado %></td>
+        <td><%= mesa.nombre_suplente %></td>
+        <td><%= mesa.cedula_suplente %></td>
+        <td><%= mesa.celular_suplente %></td>
+        <td><%= mesa.email_suplente %></td>
+        <td><%= mesa.total_ %></td>
+        <td><%= mesa.inscritos_anterio %></td>
+        <td><%= mesa.total_pld_anterior %></td>
+        <td><%= mesa.total_prd_anterior %></td>
+        <td><%= mesa.total_votos_validos_anterior %></td>
+        <td><%= mesa.total_votos_nulos_anterior %></td>
+        <td><%= mesa.total_votos_observados_anterior %></td>
+        <td><%= mesa.total_votos_emitidos_anterior %></td>
+        <td><%= mesa.total_inscritos %></td>
+        <td><%= link_to 'Show', mesa %></td>
+        <td><%= link_to 'Edit', edit_mesa_path(mesa) %></td>
+        <td><%= link_to 'Destroy', mesa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mesa', new_mesa_path %>

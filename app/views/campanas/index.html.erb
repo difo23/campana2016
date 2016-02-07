@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Campanas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Año</th>
+      <th>Distrito Municipal</th>
+      <th>Nombre Candidato</th>
+      <th>Posicion</th>
+      <th>Celular candidato</th>
+      <th>Email candidato</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @campanas.each do |campana| %>
+      <tr>
+        <td><%= campana.year %></td>
+        <td><%= campana.nombre_distrito_municipal %></td>
+        <td><%= campana.nombre_candidato %></td>
+        <td><%= campana.posicion_candidatura %></td>
+        <td><%= campana.celular_candidato %></td>
+        <td><%= campana.email_candidato %></td>
+        <td><%= link_to 'Show', campana %></td>
+        <td><%= link_to 'Edit', edit_campana_path(campana) %></td>
+        <td><%= link_to 'Destroy', campana, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Campana', new_campana_path %>
+
+

@@ -1,0 +1,109 @@
+<%= form_for(@mesa) do |f| %>
+  <% if @mesa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mesa.errors.count, "error") %> prohibited this mesa from being saved:</h2>
+
+      <ul>
+      <% @mesa.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :codigo_mesa %><br>
+    <%= f.number_field :codigo_mesa %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre_encargado_mesa %><br>
+    <%= f.text_field :nombre_encargado_mesa %>
+  </div>
+  <div class="field">
+    <%= f.label :cedula_encargado_mesa %><br>
+    <%= f.text_field :cedula_encargado_mesa %>
+  </div>
+  <div class="field">
+    <%= f.label :celular_encargado_mesa %><br>
+    <%= f.text_field :celular_encargado_mesa %>
+  </div>
+  <div class="field">
+    <%= f.label :email_encargado_mesa %><br>
+    <%= f.text_field :email_encargado_mesa %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre_delegado %><br>
+    <%= f.text_field :nombre_delegado %>
+  </div>
+  <div class="field">
+    <%= f.label :cedula_delegado %><br>
+    <%= f.text_field :cedula_delegado %>
+  </div>
+  <div class="field">
+    <%= f.label :celular_delegado %><br>
+    <%= f.text_field :celular_delegado %>
+  </div>
+  <div class="field">
+    <%= f.label :String %><br>
+    <%= f.text_field :String %>
+  </div>
+  <div class="field">
+    <%= f.label :email_delegado %><br>
+    <%= f.text_field :email_delegado %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre_suplente %><br>
+    <%= f.text_field :nombre_suplente %>
+  </div>
+  <div class="field">
+    <%= f.label :cedula_suplente %><br>
+    <%= f.text_field :cedula_suplente %>
+  </div>
+  <div class="field">
+    <%= f.label :celular_suplente %><br>
+    <%= f.text_field :celular_suplente %>
+  </div>
+  <div class="field">
+    <%= f.label :email_suplente %><br>
+    <%= f.text_field :email_suplente %>
+  </div>
+  <div class="field">
+    <%= f.label :total_ %><br>
+    <%= f.text_field :total_ %>
+  </div>
+  <div class="field">
+    <%= f.label :inscritos_anterio %><br>
+    <%= f.number_field :inscritos_anterio %>
+  </div>
+  <div class="field">
+    <%= f.label :total_pld_anterior %><br>
+    <%= f.number_field :total_pld_anterior %>
+  </div>
+  <div class="field">
+    <%= f.label :total_prd_anterior %><br>
+    <%= f.number_field :total_prd_anterior %>
+  </div>
+  <div class="field">
+    <%= f.label :total_votos_validos_anterior %><br>
+    <%= f.number_field :total_votos_validos_anterior %>
+  </div>
+  <div class="field">
+    <%= f.label :total_votos_nulos_anterior %><br>
+    <%= f.number_field :total_votos_nulos_anterior %>
+  </div>
+  <div class="field">
+    <%= f.label :total_votos_observados_anterior %><br>
+    <%= f.number_field :total_votos_observados_anterior %>
+  </div>
+  <div class="field">
+    <%= f.label :total_votos_emitidos_anterior %><br>
+    <%= f.number_field :total_votos_emitidos_anterior %>
+  </div>
+  <div class="field">
+    <%= f.label :total_inscritos %><br>
+    <%= f.number_field :total_inscritos %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

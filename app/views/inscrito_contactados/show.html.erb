@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre inscrito:</strong>
+  <%= @inscrito_contactado.nombre_inscrito %>
+</p>
+
+<p>
+  <strong>Cedula inscrito:</strong>
+  <%= @inscrito_contactado.cedula_inscrito %>
+</p>
+
+<p>
+  <strong>Celular inscrito:</strong>
+  <%= @inscrito_contactado.celular_inscrito %>
+</p>
+
+<p>
+  <strong>Codigo mesa:</strong>
+  <%= @inscrito_contactado.codigo_mesa %>
+</p>
+
+<p>
+  <strong>Edad inscrito:</strong>
+  <%= @inscrito_contactado.edad_inscrito %>
+</p>
+
+<p>
+  <strong>Sexo inscrito:</strong>
+  <%= @inscrito_contactado.sexo_inscrito %>
+</p>
+
+<%= link_to 'Edit', edit_inscrito_contactado_path(@inscrito_contactado) %> |
+<%= link_to 'Back', inscrito_contactados_path %>

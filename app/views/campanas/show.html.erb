@@ -1,0 +1,160 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @campana.year %>
+</p>
+
+<p>
+  <strong>Nombre distrito municipal:</strong>
+  <%= @campana.nombre_distrito_municipal %>
+</p>
+
+<p>
+  <strong>Codigo distrito municipal:</strong>
+  <%= @campana.codigo_distrito_municipal %>
+</p>
+
+<p>
+  <strong>Nombre municipio:</strong>
+  <%= @campana.nombre_municipio %>
+</p>
+
+<p>
+  <strong>Codigo municipio:</strong>
+  <%= @campana.codigo_municipio %>
+</p>
+
+<p>
+  <strong>Nombre provincia:</strong>
+  <%= @campana.nombre_provincia %>
+</p>
+
+<p>
+  <strong>Codigo provincia:</strong>
+  <%= @campana.codigo_provincia %>
+</p>
+
+<p>
+  <strong>Circuncripcion:</strong>
+  <%= @campana.circuncripcion %>
+</p>
+
+<p>
+  <strong>Nombre candidato:</strong>
+  <%= @campana.nombre_candidato %>
+</p>
+
+<p>
+  <strong>Posicion candidatura:</strong>
+  <%= @campana.posicion_candidatura %>
+</p>
+
+<p>
+  <strong>Cedula candidato:</strong>
+  <%= @campana.cedula_candidato %>
+</p>
+
+<p>
+  <strong>Celular candidato:</strong>
+  <%= @campana.celular_candidato %>
+</p>
+
+<p>
+  <strong>Email candidato:</strong>
+  <%= @campana.email_candidato %>
+</p>
+
+<p>
+  <strong>Nombre director electoral:</strong>
+  <%= @campana.nombre_director_electoral %>
+</p>
+
+<p>
+  <strong>Cedula director electoral:</strong>
+  <%= @campana.cedula_director_electoral %>
+</p>
+
+<p>
+  <strong>Celular director electoral:</strong>
+  <%= @campana.celular_director_electoral %>
+</p>
+
+<p>
+  <strong>Email director electoral:</strong>
+  <%= @campana.email_director_electoral %>
+</p>
+
+
+<% if @campana.recintos.size > 0 %>
+  <h2>Recintos</h2>
+  <% for recinto in @campana.recintos %>
+          <p>
+          <strong>Nombre recinto:</strong>
+          <%= @recinto.nombre_recinto %>
+          </p>
+
+          <p>
+          <strong>Codigo recinto:</strong>
+          <%= @recinto.codigo_recinto %>
+          </p>
+
+          <p>
+          <strong>Nombre encargado recinto:</strong>
+          <%= @recinto.nombre_encargado_recinto %>
+          </p>
+
+          <p>
+          <strong>Email encargado recinto:</strong>
+          <%= @recinto.email_encargado_recinto %>
+          </p>
+
+          <p>
+          <strong>Celular encargado recinto:</strong>
+          <%= @recinto.celular_encargado_recinto %>
+          </p>
+
+          <p>
+          <strong>Cedula encargado recinto:</strong>
+          <%= @recinto.cedula_encargado_recinto %>
+          </p>
+  <% end %>
+<% end %>
+
+<h2>New Recinto</h2>
+
+<%= form_for [@campana, Recinto.new] do |f| %>
+  <div class="field">
+    <%= f.label :nombre_recinto %><br>
+    <%= f.text_field :nombre_recinto %>
+  </div>
+  <div class="field">
+    <%= f.label :codigo_recinto %><br>
+    <%= f.number_field :codigo_recinto %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre_encargado_recinto %><br>
+    <%= f.text_field :nombre_encargado_recinto %>
+  </div>
+  <div class="field">
+    <%= f.label :email_encargado_recinto %><br>
+    <%= f.text_field :email_encargado_recinto %>
+  </div>
+  <div class="field">
+    <%= f.label :celular_encargado_recinto %><br>
+    <%= f.text_field :celular_encargado_recinto %>
+  </div>
+  <div class="field">
+    <%= f.label :cedula_encargado_recinto %><br>
+    <%= f.text_field :cedula_encargado_recinto %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+ 
+<% end %>
+
+
+
+<%= link_to 'Edit', edit_campana_path(@campana) %> |
+<%= link_to 'Back', campanas_path %>

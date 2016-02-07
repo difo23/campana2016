@@ -1,0 +1,41 @@
+<%= form_for(@inscrito_contactado) do |f| %>
+  <% if @inscrito_contactado.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@inscrito_contactado.errors.count, "error") %> prohibited this inscrito_contactado from being saved:</h2>
+
+      <ul>
+      <% @inscrito_contactado.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre_inscrito %><br>
+    <%= f.text_field :nombre_inscrito %>
+  </div>
+  <div class="field">
+    <%= f.label :cedula_inscrito %><br>
+    <%= f.text_field :cedula_inscrito %>
+  </div>
+  <div class="field">
+    <%= f.label :celular_inscrito %><br>
+    <%= f.text_field :celular_inscrito %>
+  </div>
+  <div class="field">
+    <%= f.label :codigo_mesa %><br>
+    <%= f.number_field :codigo_mesa %>
+  </div>
+  <div class="field">
+    <%= f.label :edad_inscrito %><br>
+    <%= f.number_field :edad_inscrito %>
+  </div>
+  <div class="field">
+    <%= f.label :sexo_inscrito %><br>
+    <%= f.check_box :sexo_inscrito %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

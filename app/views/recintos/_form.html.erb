@@ -1,0 +1,41 @@
+<%= form_for(@recinto) do |f| %>
+  <% if @recinto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@recinto.errors.count, "error") %> prohibited this recinto from being saved:</h2>
+
+      <ul>
+      <% @recinto.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre_recinto %><br>
+    <%= f.text_field :nombre_recinto %>
+  </div>
+  <div class="field">
+    <%= f.label :codigo_recinto %><br>
+    <%= f.number_field :codigo_recinto %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre_encargado_recinto %><br>
+    <%= f.text_field :nombre_encargado_recinto %>
+  </div>
+  <div class="field">
+    <%= f.label :email_encargado_recinto %><br>
+    <%= f.text_field :email_encargado_recinto %>
+  </div>
+  <div class="field">
+    <%= f.label :celular_encargado_recinto %><br>
+    <%= f.text_field :celular_encargado_recinto %>
+  </div>
+  <div class="field">
+    <%= f.label :cedula_encargado_recinto %><br>
+    <%= f.text_field :cedula_encargado_recinto %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
