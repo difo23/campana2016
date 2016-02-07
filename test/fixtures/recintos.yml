@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre_recinto: MyString
+  codigo_recinto: 1
+  nombre_encargado_recinto: MyString
+  email_encargado_recinto: MyString
+  celular_encargado_recinto: MyString
+  cedula_encargado_recinto: 
+
+two:
+  nombre_recinto: MyString
+  codigo_recinto: 1
+  nombre_encargado_recinto: MyString
+  email_encargado_recinto: MyString
+  celular_encargado_recinto: MyString
+  cedula_encargado_recinto: 

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre_inscrito: MyString
+  cedula_inscrito: 
+  celular_inscrito: MyString
+  codigo_mesa: 1
+  edad_inscrito: 1
+  sexo_inscrito: false
+
+two:
+  nombre_inscrito: MyString
+  cedula_inscrito: 
+  celular_inscrito: MyString
+  codigo_mesa: 1
+  edad_inscrito: 1
+  sexo_inscrito: false

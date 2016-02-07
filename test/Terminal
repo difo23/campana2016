@@ -1,0 +1,16 @@
+Terminal
+
+http://localhost:28017
+
+$ rails g mongoid:config
+
+$ rails g scaffold campana year:integer nombre_distrito_municipal:string codigo_distrito_municipal:integer nombre_municipio:string codigo_municipio:integer nombre_provincia:string codigo_provincia:integer circuncripcion:integer nombre_candidato:string posicion_candidatura:string cedula_candidato:bigInteger celular_candidato:string email_candidato:string nombre_director_electoral:string cedula_director_electoral:bigInteger celular_director_electoral:string email_director_electoral:string
+
+$ rails g scaffold recinto nombre_recinto:string codigo_recinto:integer nombre_encargado_recinto:string email_encargado_recinto:string celular_encargado_recinto:string cedula_encargado_recinto:bigInteger
+
+$ rails g scaffold mesa codigo_mesa:integer nombre_encargado_mesa:string cedula_encargado_mesa:bigInteger celular_encargado_mesa:string email_encargado_mesa:string nombre_delegado:string cedula_delegado:bigInteger celular_delegado: String email_delegado:string nombre_suplente:string cedula_suplente:bigInteger celular_suplente:string email_suplente:string total_ inscritos_anterio:integer total_pld_anterior:integer total_prd_anterior:integer total_votos_validos_anterior:integer total_votos_nulos_anterior:integer total_votos_observados_anterior:integer total_votos_emitidos_anterior:integer total_inscritos:integer
+
+$ rails g scaffold inscrito_contactado nombre_inscrito:string cedula_inscrito:bigInteger celular_inscrito:string codigo_mesa:integer edad_inscrito:integer sexo_inscrito:boolean
+
+
+rails server

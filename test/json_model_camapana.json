@@ -1,0 +1,103 @@
+//collection name campanas
+
+//campana documento 1
+
+{
+
+	year: Integer,
+	nombre_distrito_municipal: String,
+	codigo_distrito_municipal: Integer,
+	nombre_municipio: String,
+	codigo_municipio: Integer,
+	nombre_provincia: String,
+	codigo_provincia: Integer,
+	circuncripcion: Integer,
+	nombre_candidato: String,
+	posicion_candidatura: String,
+	cedula_candidato: BigInteger,
+	celular_candidato: String,
+	email_candidato: String,
+	nombre_director_electoral: String,
+	cedula_director_electoral: BigInteger,
+	celular_director_electoral: String,
+	email_director_electoral: String,
+
+	recintos: {
+
+	[
+		{
+			nombre_recinto: String,
+			codigo_recinto: Integer,
+			nombre_encargado_recinto: String,
+			email_encargado_recinto: String,
+			celular_encargado_recinto: String,
+			cedula_encargado_recinto: BigInteger,
+
+			mesas: {
+
+				[ 
+					{ 
+						codigo_mesa: Integer,
+						nombre_encargado_mesa: String,
+						cedula_encargado_mesa: BigInteger,
+						celular_encargado_mesa: String,
+						email_encargado_mesa: String,
+
+						nombre_delegado: String,
+						cedula_delegado: BigInteger,
+						celular_delegado: String,
+						email_delegado: String,
+
+						nombre_suplente: String,
+						cedula_suplente: BigInteger,
+						celular_suplente: String,
+						email_suplente: String,
+
+						total_ inscritos_anterio: Integer,
+						total_pld_anterior: Integer,
+						total_prd_anterior: Integer,
+						total_votos_validos_anterior: Integer,
+						total_votos_nulos_anterior: Integer,
+						total_votos_observados_anterior: Integer,
+						total_votos_emitidos_anterior: Integer,
+
+						total_inscritos: Integer,
+
+						inscritos_contactados: {
+
+							[ 
+								{
+									nombre_inscrito: String,
+									cedula_inscrito: BigInteger,
+									celular_inscrito: String,
+									codigo_mesa: Integer,
+									edad_inscrito: Integer,
+									sexo_inscrito: Boolean
+									},
+								...,
+								{}//inscrito N
+
+							]//fin arreglo inscrito
+						}// inscrito
+
+						},//mesa 1
+					...,
+					{...} //mesa n
+
+				]//fin arreglo mesa
+			}// mesa
+
+		},//recinto 1
+
+		...,
+
+		{...}// recinto n
+
+
+	]	//fin arreglo recinto
+
+
+	} //fin recintos 2016
+
+
+}//fin campana 2016

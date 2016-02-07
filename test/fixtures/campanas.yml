@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  year: 1
+  nombre_distrito_municipal: MyString
+  codigo_distrito_municipal: 1
+  nombre_municipio: MyString
+  codigo_municipio: 1
+  nombre_provincia: MyString
+  codigo_provincia: 1
+  circuncripcion: 1
+  nombre_candidato: MyString
+  posicion_candidatura: MyString
+  cedula_candidato: 
+  celular_candidato: MyString
+  email_candidato: MyString
+  nombre_director_electoral: MyString
+  cedula_director_electoral: 
+  celular_director_electoral: MyString
+  email_director_electoral: MyString
+
+two:
+  year: 1
+  nombre_distrito_municipal: MyString
+  codigo_distrito_municipal: 1
+  nombre_municipio: MyString
+  codigo_municipio: 1
+  nombre_provincia: MyString
+  codigo_provincia: 1
+  circuncripcion: 1
+  nombre_candidato: MyString
+  posicion_candidatura: MyString
+  cedula_candidato: 
+  celular_candidato: MyString
+  email_candidato: MyString
+  nombre_director_electoral: MyString
+  cedula_director_electoral: 
+  celular_director_electoral: MyString
+  email_director_electoral: MyString

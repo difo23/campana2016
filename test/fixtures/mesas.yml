@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo_mesa: 1
+  nombre_encargado_mesa: MyString
+  cedula_encargado_mesa: 
+  celular_encargado_mesa: MyString
+  email_encargado_mesa: MyString
+  nombre_delegado: MyString
+  cedula_delegado: 
+  celular_delegado: MyString
+  String: MyString
+  email_delegado: MyString
+  nombre_suplente: MyString
+  cedula_suplente: 
+  celular_suplente: MyString
+  email_suplente: MyString
+  total_: MyString
+  inscritos_anterio: 1
+  total_pld_anterior: 1
+  total_prd_anterior: 1
+  total_votos_validos_anterior: 1
+  total_votos_nulos_anterior: 1
+  total_votos_observados_anterior: 1
+  total_votos_emitidos_anterior: 1
+  total_inscritos: 1
+
+two:
+  codigo_mesa: 1
+  nombre_encargado_mesa: MyString
+  cedula_encargado_mesa: 
+  celular_encargado_mesa: MyString
+  email_encargado_mesa: MyString
+  nombre_delegado: MyString
+  cedula_delegado: 
+  celular_delegado: MyString
+  String: MyString
+  email_delegado: MyString
+  nombre_suplente: MyString
+  cedula_suplente: 
+  celular_suplente: MyString
+  email_suplente: MyString
+  total_: MyString
+  inscritos_anterio: 1
+  total_pld_anterior: 1
+  total_prd_anterior: 1
+  total_votos_validos_anterior: 1
+  total_votos_nulos_anterior: 1
+  total_votos_observados_anterior: 1
+  total_votos_emitidos_anterior: 1
+  total_inscritos: 1
